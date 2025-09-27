@@ -2,7 +2,6 @@
   flex: 2;
   border-left: 1px solid #dddddd35;
   border-right: 1px solid #dddddd35;
-  height: 100%;
   display: flex;
   flex-direction: column;
 
@@ -85,7 +84,6 @@
         height: 30px;
         border-radius: 50%;
         object-fit: cover;
-        gap: 5px;
       }
 
       .texts {
@@ -93,6 +91,13 @@
         display: flex;
         flex-direction: column;
         gap: 5px;
+
+        img {
+          width: 100%;
+          height: 300px;
+          border-radius: 10px;
+          object-fit: contain;
+        }
 
         p {
           padding: 20px;
@@ -138,6 +143,10 @@
       padding: 10px;
     }
 
+    &:disabled {
+      cursor: not-allowed;
+    }
+
     .emoji {
       position: relative;
 
@@ -154,6 +163,11 @@
       padding: 10px 20px;
       border-radius: 10px;
       cursor: pointer;
+    }
+
+    &:disabled {
+      background-color: #5184f39c;
+      cursor: not-allowed;
     }
   }
 }

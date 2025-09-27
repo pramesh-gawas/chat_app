@@ -17,7 +17,6 @@ const Login = () => {
   const [loading, setLoading] = useState(false);
 
   const HandleAvatar = (e) => {
-    console.log(e);
     if (e.target.files[0]) {
       setAvatar({
         file: e.target.files[0],
@@ -71,8 +70,6 @@ const Login = () => {
     } finally {
       setLoading(false);
     }
-
-    console.log(username);
   };
   return (
     <div className="login">

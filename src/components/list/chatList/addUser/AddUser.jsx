@@ -64,7 +64,6 @@ const AddUser = () => {
           updatedAt: Date.now(),
         }),
       });
-      console.log(newChatRef.id);
     } catch (error) {
       console.log(error);
     }
